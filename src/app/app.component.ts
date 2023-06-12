@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ChallOutput';
+  title = 'output';
+
+  onomatopoeiaList: string[] = [];
+
+  onReceiveNewOnomatopia(event: string): void {
+    this.onomatopoeiaList.push(event);
+  }
 }
